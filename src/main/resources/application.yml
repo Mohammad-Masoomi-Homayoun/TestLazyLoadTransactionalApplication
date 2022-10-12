@@ -1,0 +1,19 @@
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        format_sql: true
+    show-sql: true
+
+  datasource:
+    name: test
+    username: root
+    password: bss@zitel
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF8
+
+server:
+  port: 8585
